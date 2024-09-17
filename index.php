@@ -21,10 +21,15 @@
 
     }
 
-    //creazione dell'istanza della classe
-    $Howls_Moving_Castle = new Movie('Howl\s Moving Castle', 'ハウルの動く城 (Hauru no Ugoku Shiro)', 'Animation', '5 September 2004', '119 minutes');
-    
-    var_dump($Howls_Moving_Castle);
+    //creazione delle istanze della classe Movie
+    $movie_1 = new Movie('Howl/s Moving Castle', 'ハウルの動く城 (Hauru no Ugoku Shiro)', 'Animation', '5 September 2004', '119 minutes');
+
+    var_dump($movie_1);
+
+    $movie_2  = new Movie('5 Centimeters per Second', '秒速5センチメートル (Byōsoku Go Senchimētoru)', 'Animation', '3 March 2007', '63 minutes');
+
+    var_dump($movie_2);
+
 ?>
 
 <!DOCTYPE html>
