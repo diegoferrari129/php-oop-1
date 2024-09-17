@@ -19,16 +19,21 @@
             $this->running_time = $running_time;
         }
 
+        //metodo per mostrare gli oggetti a schermo
+        public function showMovie() {
+            return $this->title.' '.$this->original_title.' '.$this->genre.' '.$this->release_date.' '.$this->running_time;
+        }
+
     }
 
     //creazione delle istanze della classe Movie
     $movie_1 = new Movie('Howl/s Moving Castle', 'ハウルの動く城 (Hauru no Ugoku Shiro)', 'Animation', '5 September 2004', '119 minutes');
 
-    var_dump($movie_1);
-
     $movie_2  = new Movie('5 Centimeters per Second', '秒速5センチメートル (Byōsoku Go Senchimētoru)', 'Animation', '3 March 2007', '63 minutes');
 
-    var_dump($movie_2);
+    //invoco il metodo showMovie
+    echo $movie_1->showMovie();
+    echo $movie_2->showMovie();
 
 ?>
 
